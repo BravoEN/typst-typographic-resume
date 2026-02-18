@@ -1,9 +1,10 @@
 # CV
 
-CV Forket fra https://github.com/tsnobip/typst-typographic-resume
+CV mal Forket fra https://github.com/tsnobip/typst-typographic-resume
 
-<a href="template/main.pdf">
-    <img src="template/main.pdf" alt="cv" width="300" />
+Nåværende CV
+<a href="main.webp">
+    <img src="main.webp" alt="cv" width="300" />
 </a>
 
 ## Usage
