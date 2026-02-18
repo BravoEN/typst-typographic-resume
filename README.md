@@ -3,6 +3,7 @@
 CV mal Forket fra https://github.com/tsnobip/typst-typographic-resume
 
 Nåværende CV
+
 <a href="main.webp">
     <img src="main.webp" alt="cv" width="300" />
 </a>
