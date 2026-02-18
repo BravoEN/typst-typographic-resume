@@ -1,9 +1,9 @@
-# Typographic-Resume
+# CV
 
-A stylish and customizable résumé template for Typst, designed with elegant typographic variations.
+CV Forket fra https://github.com/tsnobip/typst-typographic-resume
 
-<a href="thumbnail.webp">
-    <img src="thumbnail.webp" alt="thumbnail" width="300" />
+<a href="template/main.pdf">
+    <img src="template/main.pdf" alt="cv" width="300" />
 </a>
 
 ## Usage
