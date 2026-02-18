@@ -90,9 +90,11 @@
         }
 
 
-        set text(weight: "light", style: "italic", hyphenate: true)
-        set par(leading: 1.0em)
-        bio
+        if bio != "" {
+          set text(weight: "light", style: "italic", hyphenate: true)
+          set par(leading: 1.0em)
+          bio
+        }
       }
 
       aside
@@ -228,6 +230,30 @@
   }
 }
 
+#let intro-entry(
+    theme: (),
+    title: "",
+    body,
+  ) = { 
+  set text(size: theme.font-size) if "font-size" in theme
+  {
+    set text(font: theme.font-secondary) if "font-secondary" in theme
+    set text(font: default-theme.font-secondary) if "font-secondary" not in theme
+    set block(above: 0pt, below: 0pt)
+    stack(
+      spacing: 5pt,
+      {
+        set text(weight: "bold")
+        upper(title)
+      },
+    )
+  }
+  context {
+    set par(leading: 1em)
+    body
+  }
+}
+
 #let education-entry(
   theme: (),
   timeframe: "",
@@ -254,8 +280,7 @@
       set block(above: 6pt, below: 8pt)
       line(stroke: 0.1pt, length: 100%)
     }
-  }
-
+  } 
 
   context {
     set text(weight: "light", fill: text.fill.lighten(30%))
@@ -277,3 +302,6 @@
 #let github-icon = image("images/github-brands.svg")
 #let phone-icon = image("images/phone-solid.svg")
 #let email-icon = image("images/envelope-solid.svg")
+#let personalities-icon = image("images/16personalities.png")
+#let linkedin-icon = image("images/linkedin.png")
+#let easi-icon = image("images/easi.png")

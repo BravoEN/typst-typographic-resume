@@ -13,210 +13,195 @@
     // gutter-size: 4em,
     // main-width: 6fr,
     // aside-width: 3fr,
-    // profile-picture-width: 55%,
+    profile-picture-width: 75%,
   ),
-  first-name: "Paul",
-  last-name: "Dupont",
-  profession: "Software Engineer",
-  bio: [
-    Experienced software engineer with a passion for developing innovative programs that expedite the efficiency and effectiveness of organizational success.],
-  profile-picture: image("../images/profile_pic_example.jpg"),
+  first-name: "Eskil",
+  last-name: "Nilsen",
+  profession: "Student",
+  bio: [Hei, jeg er en Bachelorstudent i IT og Informasjonsystemer hos USN, gjerne ta en titt på github'en min og bare å ta kontakt for en hyggelig prat],
+  profile-picture: image("../images/1758272881289.jpeg"),
   aside: {
     section(
-      "Contact",
+      theme: (
+        space-above: 45pt,
+      ),
+      "Kontakt",
       {
         set image(width: 8pt)
+        set align(horizon)
         contact-entry(
           github-icon,
-          link("https://github.com/pauldupont/", "pauldupont"),
+          link("https://github.com/BravoEN/", "bravoen"),
         )
+        line(stroke: 0.1pt, length: 100%)
+        set image(width: 12pt)
+        contact-entry(
+          linkedin-icon,
+          link("https://www.linkedin.com/in/eskiln/", "eskiln"),
+        )
+        set image(width: 8pt)
         line(stroke: 0.1pt, length: 100%)
         contact-entry(
           phone-icon,
-          link("tel:+33 6 78 90 12 34", "+33 6 78 90 12 34"),
+          link("tel:+47 994 60 829", "+47 994 60 829"),
         )
         line(stroke: 0.1pt, length: 100%)
         contact-entry(
           email-icon,
-          link("mailto:pauldupont@example.com", "pauldupont@example.com"),
+          link("mailto:eskilnilsen2004@gmail.com", "eskilnilsen2004@gmail.com"),
         )
       },
     )
 
     section(
-      "Main public contributions",
+      "Personlighetstester",
       {
-        set text(font: "Roboto", size: 8pt)
-        stack(
-          spacing: 8pt,
+        set image(width: 12pt)
+        set align(horizon)
+        contact-entry(
+          personalities-icon,
           link(
-            "https://github.com/tsnobip/typst-typographic-resume",
-            "tsnobip/typst-typographic-resume",
-          ),
+            "https://www.16personalities.com/no/istj-personlighet",
+            "Logiker ISTJ-A",
+          )
+        )
+        line(stroke: 0.1pt, length: 100%)
+        contact-entry(
+          easi-icon,
           link(
-            "https://github.com/typst/typst",
-            "typst/typst",
-          ),
-          link(
-            "https://github.com/rescript-lang/rescript",
-            "rescript-lang/rescript",
-          ),
-          link(
-            "https://github.com/pauldupont/devops-toolkit",
-            "pauldupont/devops-toolkit",
-          ),
-          link(
-            "https://github.com/pauldupont/real-time-chat-app",
-            "pauldupont/real-time-chat-app",
-          ),
+            "https://master.no/solutions/easi/",
+            "Analyst",
+          )
         )
       },
     )
 
     section(
-      "Tech Stack",
+      "Teknologier",
       {
         set text(font: "Roboto", size: 8pt)
         stack(
           spacing: 8pt,
           "Python",
-          "JavaScript",
-          "ReScript",
-          "React",
-          "Node.js",
+          "SQL",
+          "Java",
+          "HTML",
+          "CSS",
           "Django",
-          "PostgreSQL",
-          "Docker",
-          "Kubernetes",
+          "Javascript",
         )
       },
     )
 
     section(
-      "Languages",
+      "Språk",
       {
-        language-entry("English", "Native")
-        language-entry("Spanish", "Fluent")
-        language-entry("German", "Intermediate")
+        language-entry("Norsk", "Morsmål")
+        language-entry("Engelsk", "Flytende")
       },
-    )
-
-    section(
-      "Interests",
-      {
-        set text(size: 7pt)
-        stack(
-          spacing: 8pt,
-          "Open Source Contributions",
-          "Road biking",
-          "Traveling",
-        )
-      },
-    )
+    )   
   },
 )
-
 
 #section(
   theme: (
     space-above: 0pt,
   ),
-  "Work Experiences",
+  "Introduksjon",
+  {
+    intro-entry(
+      theme: (
+        space-above: 0pt,
+      ),
+      [Jeg er en motivert, disiplinert og ambisiøs person med sterk evne til å kommunisere og samarbeide effektivt i team. Jeg arbeider strukturert, tar ansvar for egne oppgaver og trives i miljøer hvor jeg kan utvikle meg faglig og bidra til felles mål.],
+    )
+  }
+
+)
+#section(
+  "Utdannelse",
+  grid(
+    columns: 1,
+    column-gutter: default-theme.margin,
+    education-entry(
+      title: "BSc i IT & Informasjonsystemer",
+      institution: "Universitet i Sørøst-Norge",
+      timeframe: "2024 - 2027",
+      [PRG1000 Grunnleggende programmering 1 \
+      DAT1000 Database 1 \
+      INF1000 Informasjonssystemer \
+      WEB1100 Webutvikling og HCI \
+      PRO1000 Praktisk prosjektarbeid \
+      SYS1000 Systemutvikling \
+      PRG1100 Grunnleggende programmering 2 \
+      ORL1000 Organisering og ledelse \
+      ESB1000 Etikk og samfunnsansvar \
+      DAT2000 Database 2 \
+      OBJ2000 Objektorientert programmering 1 \
+      APP2000 Applikasjonsutvikling for web \
+      OBJ2100 Objektorientert programmering 2 \
+      MET1010 Samfunnsvitenskapelig metode \
+      SIK2000 Informasjonssikkerhet],
+    )
+  ),
+)
+
+#section(
+  "Arbeidsforhold",
   {
     work-entry(
       theme: (
         space-above: 0pt,
       ),
-      timeframe: "Jan 2024 - Today",
-      title: "Senior Software Engineer",
-      organization: "Tech Innovators Inc.",
-      location: "Lyon, FR",
-      [
-        Led a team of developers to design and implement scalable web applications.
-        Improved system performance by 30% through code optimization.
-        Mentored junior developers, fostering a culture of continuous learning.
-        Spearheaded the migration of legacy systems to modern cloud-based infrastructure.
-      ],
+      timeframe: "Jan 2026 - Nåværende",
+      title: "Mentor",
+      organization: "Universitetet i Sørøst-Norge",
+      location: "Hønefoss",
+      [],
     )
     work-entry(
-      timeframe: "Oct 2020 - December 2023",
-      title: "Software Engineer",
-      organization: "CodeCraft Solutions",
-      location: "San Francisco, USA",
-      [
-        Developed and maintained RESTful APIs for client applications.
-        Collaborated with cross-functional teams to deliver high-quality software.
-        Implemented CI/CD pipelines, reducing deployment times by 40%.
-        Conducted code reviews to ensure adherence to best practices and coding standards.
-      ],
+      timeframe: "Aug 2024 - Nåværende",
+      title: "Butikkmedarbeider",
+      organization: "Rema 1000 Eikli",
+      location: "Hønefoss",
+      [],
     )
     work-entry(
-      timeframe: "Jul 2019 - Oct 2020",
-      title: "Junior Software Engineer",
-      organization: "NextGen Tech",
-      location: "Tbilisi, GE",
-      [
-        Assisted in the development of e-commerce platforms.
-        Wrote unit tests to ensure code reliability and maintainability.
-        Participated in agile ceremonies, contributing to sprint planning and retrospectives.
-        Researched and implemented new tools to improve development workflows.
-      ],
+      timeframe: "Nov 2022 - Juli 2024",
+      title: "Butikkmedarbeider",
+      organization: "Rema 1000 Råholt",
+      location: "Råholt",
+      [],
     )
     work-entry(
-      timeframe: "Nov 2018 - Jun 2019",
-      title: "Intern",
-      organization: "Startup Hub",
-      location: "Paris, FR",
-      [
-        Supported the development team in debugging and testing applications.
-        Gained hands-on experience with modern web technologies.
-        Created technical documentation for internal tools and processes.
-        Assisted in the deployment of a new customer-facing web application.
-      ],
+      timeframe: "Desember 2023 - Juni 2024",
+      title: "Pubmedarbeider",
+      organization: "Brannkassa Diskotek & Bar",
+      location: "Lyngseidet",
+      [],
     )
     work-entry(
-      timeframe: "Jun 2017 - Oct 2018",
-      title: "Freelance Developer",
-      organization: "Self-Employed",
-      location: "Remote",
-      [
-        Designed and developed custom websites for small businesses.
-        Provided technical support and maintenance for client projects.
-        Built responsive and user-friendly interfaces using modern web technologies.
-        Managed multiple projects simultaneously, ensuring timely delivery.
-      ],
+      timeframe: "Aug 2022 - Nov 2022",
+      title: "Kokkelærling",
+      organization: "Quality Hotel Olavsgaard",
+      location: "Skjetten",
+      [],
     )
     work-entry(
-      timeframe: "Jan 2016 - May 2017",
-      title: "Research Assistant",
-      organization: "École des Mines de St-Étienne",
-      location: "St-Étienne, France",
-      [
-        Conducted research on algorithms for optimizing large-scale systems.
-        Published findings in peer-reviewed journals and presented at conferences.
-        Developed prototypes to validate research concepts.
-        Collaborated with a multidisciplinary team to achieve project goals.
-      ],
+      timeframe: "Nov 2021 - Nov 2022",
+      title: "Kjøkkenmedhjelper",
+      organization: "Thon Hotel Arena",
+      location: "Lillestrøm",
+      [],
+    )
+    work-entry(
+      timeframe: "Juni 2019 - Nov 2019",
+      title: "Bilklargjører",
+      organization: "Alta Motorsenter AS",
+      location: "Aronneskjosen",
+      [],
     )
   },
 )
 
-#section(
-  "Education",
-  grid(
-    columns: 2,
-    column-gutter: default-theme.margin,
-    education-entry(
-      title: "MSc in Computer Science",
-      institution: "École des Mines de St-Étienne, FR",
-      timeframe: "2014 - 2017",
-      [Focused on software engineering, algorithms, and data structures.],
-    ),
-    education-entry(
-      title: "PhD in Artificial Intelligence",
-      institution: "Seoul National University, KR",
-      timeframe: "2017 - 2021",
-      [Specialized in machine learning and natural language processing.],
-    ),
-  ),
-)
+
