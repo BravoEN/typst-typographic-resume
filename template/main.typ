@@ -31,13 +31,13 @@
         set align(horizon)
         contact-entry(
           github-icon,
-          link("https://github.com/BravoEN/", "bravoen"),
+          link("https://github.com/BravoEN/", "Github"),
         )
         line(stroke: 0.1pt, length: 100%)
         set image(width: 12pt)
         contact-entry(
           linkedin-icon,
-          link("https://www.linkedin.com/in/eskiln/", "eskiln"),
+          link("https://www.linkedin.com/in/eskiln/", "Linkedin"),
         )
         set image(width: 8pt)
         line(stroke: 0.1pt, length: 100%)
@@ -88,7 +88,7 @@
           "HTML",
           "CSS",
           "Django",
-          "Javascript",
+          "JS/TS",
         )
       },
     )
@@ -141,9 +141,41 @@
       APP2000 Applikasjonsutvikling for web \
       OBJ2100 Objektorientert programmering 2 \
       MET1010 Samfunnsvitenskapelig metode \
-      SIK2000 Informasjonssikkerhet],
+      SIK2000 Informasjonssikkerhet \
+      BID3000 Business Intelligence og datavarehus \
+      MOB3000 Applikasjonsutvikling for mobile enheter \
+      AI3000R Kunstig intelligens for forretningsapplikasjoner \
+      SEL3000R Selvstudium],
     )
   ),
+)
+
+#section(
+  "Prosjekt",
+  {
+    project-entry(
+      theme: (
+        space-above: 0pt,
+      ),
+      timeframe: "Juli 2026 - Nåværende",
+      title: "Flyklubb",
+      [],
+    )
+    project-entry(
+      timeframe: "August 2025 - Juni 2026",
+      title: "Snackes",
+      icon: github-icon,
+      location: link("https://github.com/Gyutta/Snackes", "Snackes"),
+      [Prosjekt i Applikasjonsutvikling(APP2000), Prosjektet varte over 2 semester og ved bruk av django],
+    )
+    project-entry(
+      timeframe: "Januar 2025 - Juni 2025",
+      title: "Homerentals",
+      icon: github-icon,
+      location: link("https://github.com/BravoEN/SYS1000_Eksamen", "Homerentals"),
+      [1st års semesterprosjekt i Systemutvikling(SYS1000) i samarbeid med Praktisk prosjektarbeid (PRO1000)],
+    )
+  },
 )
 
 #section(
@@ -153,13 +185,6 @@
       theme: (
         space-above: 0pt,
       ),
-      timeframe: "Jan 2026 - Nåværende",
-      title: "Mentor",
-      organization: "Universitetet i Sørøst-Norge",
-      location: "Hønefoss",
-      [],
-    )
-    work-entry(
       timeframe: "Aug 2024 - Nåværende",
       title: "Butikkmedarbeider",
       organization: "Rema 1000 Eikli",
@@ -167,7 +192,14 @@
       [],
     )
     work-entry(
-      timeframe: "Nov 2022 - Juli 2024",
+      timeframe: "Januar 2026 - Juni 2026",
+      title: "Mentor",
+      organization: "Universitetet i Sørøst-Norge",
+      location: "Hønefoss",
+      [],
+    )
+    work-entry(
+      timeframe: "November 2022 - Juli 2024",
       title: "Butikkmedarbeider",
       organization: "Rema 1000 Råholt",
       location: "Råholt",

@@ -230,6 +230,56 @@
   }
 }
 
+#let project-entry(
+  theme: (),
+  timeframe: "",
+  title: "",
+  icon: none,
+  location: "",
+  body,
+) = {
+  set text(size: theme.font-size) if "font-size" in theme
+
+  if "space-above" not in theme {
+    v(1fr)
+  } else {
+    v(theme.space-above)
+  }
+  {
+    set text(font: theme.font-secondary) if "font-secondary" in theme
+    set text(font: default-theme.font-secondary) if "font-secondary" not in theme
+    set block(above: 0pt, below: 0pt)
+      grid(
+        columns: (1fr, auto),
+        align: (left, right + horizon),
+        stack(
+          spacing: 5pt,
+          context {
+            set text(weight: "light", fill: text.fill.lighten(30%))
+            timeframe
+          },
+          { set text(weight: "bold"); upper(title) },
+        ),
+        box({
+          if icon != none {
+            box(baseline: 15%, width: 8pt, icon)
+            h(4pt)
+          }
+          location
+        }),
+      )
+  }
+  {
+    set block(above: 6pt, below: 8pt)
+    line(stroke: 0.1pt, length: 100%)
+  }
+  context {
+    set text(fill: text.fill.lighten(30%))
+    set par(leading: 1em)
+    body
+  }
+}
+
 #let intro-entry(
     theme: (),
     title: "",
