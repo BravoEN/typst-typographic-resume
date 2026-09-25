@@ -18,7 +18,7 @@
   first-name: "Eskil",
   last-name: "Nilsen",
   profession: "Student",
-  bio: [Hei, jeg er en Bachelorstudent i IT og Informasjonsystemer hos USN, gjerne ta en titt på github'en min og bare å ta kontakt for en hyggelig prat],
+  bio: [Jeg er en Bachelorstudent i IT og Informasjonssystemer ved USN som er ferdig i 2027, gjerne ta en titt på github profilen min, og ta kontakt for en hyggelig prat!],
   profile-picture: image("../images/1758272881289.jpeg"),
   aside: {
     section(
@@ -31,13 +31,13 @@
         set align(horizon)
         contact-entry(
           github-icon,
-          link("https://github.com/BravoEN/", "Github"),
+          link("https://github.com/BravoEN/", "bravoen"),
         )
         line(stroke: 0.1pt, length: 100%)
         set image(width: 12pt)
         contact-entry(
           linkedin-icon,
-          link("https://www.linkedin.com/in/eskiln/", "Linkedin"),
+          link("https://www.linkedin.com/in/eskiln/", "eskiln"),
         )
         set image(width: 8pt)
         line(stroke: 0.1pt, length: 100%)
@@ -100,6 +100,21 @@
         language-entry("Engelsk", "Flytende")
       },
     )   
+    section(
+      "Referanser",
+      {
+        reference-entry(
+          "Martin Tveter",
+          "Rema 1000, Eikli",
+          "+47 48254108"
+        )
+        reference-entry(
+          "Ragnhild Bassøe Gundersen",
+          "Programkoordinator/Lektor ved USN",
+          "+47 93455410"
+        )
+      },
+    ) 
   },
 )
 
@@ -113,7 +128,10 @@
       theme: (
         space-above: 0pt,
       ),
-      [Jeg er en motivert, disiplinert og ambisiøs person med sterk evne til å kommunisere og samarbeide effektivt i team. Jeg arbeider strukturert, tar ansvar for egne oppgaver og trives i miljøer hvor jeg kan utvikle meg faglig og bidra til felles mål.],
+      [Hei, hyggelig at du tar tid til å se på CV'en min,  
+        Jeg er nysjerrig, ansvarsfull og løsningsorientert og liker å ha forståelse over hele systemet/prosjektet. 
+        Foretrekker å jobbe i team da jeg kan ha noen å sprette ideer på, men det er ingen problem å jobbe alene i den forstand. 
+        Ta gjerne kontakt, jeg forteller gjerne mer om meg selv.],
     )
   }
 
@@ -153,14 +171,6 @@
 #section(
   "Prosjekt",
   {
-    project-entry(
-      theme: (
-        space-above: 0pt,
-      ),
-      timeframe: "Juli 2026 - Nåværende",
-      title: "Flyklubb",
-      [],
-    )
     project-entry(
       timeframe: "August 2025 - Juni 2026",
       title: "Snackes",
