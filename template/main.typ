@@ -129,7 +129,7 @@
         space-above: 0pt,
       ),
       [Hei, hyggelig at du tar tid til å se på CV'en min,  
-        Jeg er nysjerrig, ansvarsfull og løsningsorientert og liker å ha forståelse over hele systemet/prosjektet. 
+        Jeg er nysgjerrig, ansvarsfull, løsningsorientert og jeg liker å ha forståelse over hele systemet/prosjektet. 
         Foretrekker å jobbe i team da jeg kan ha noen å sprette ideer på, men det er ingen problem å jobbe alene i den forstand. 
         Ta gjerne kontakt, jeg forteller gjerne mer om meg selv.],
     )
