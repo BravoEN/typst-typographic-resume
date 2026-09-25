@@ -175,6 +175,31 @@
   )
 }
 
+#let reference-entry(
+  theme: (),
+  name,
+  position,
+  tlf,
+) = {
+  set grid(columns: (theme.gutter-size, 1fr)) if "gutter-size" in theme
+  set text(font: theme.font-secondary) if "font-secondary" in theme
+  set text(font: default-theme.font-secondary) if "font-secondary" not in theme
+  set text(size: theme.font-size) if "font-size" in theme
+  stack(
+    {
+      name
+    },
+    {
+      v(5pt)
+      position
+    },
+    {
+      v(5pt)
+      tlf
+    }
+  )
+}
+
 #let work-entry(
   theme: (),
   timeframe: "",
